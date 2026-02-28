@@ -1,1 +1,15 @@
 workspace/
+
+media/inbound/
+
+agents/main/sessions/
+
+agents/
+
+devices/
+
+identity/
+
+logs/
+
+telegram/

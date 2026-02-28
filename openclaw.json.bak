@@ -1,4 +1,10 @@
 {
+  "wizard": {
+    "lastRunAt": "2026-02-27T17:17:40.996Z",
+    "lastRunVersion": "2026.2.27",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
   "auth": {
     "profiles": {
       "moonshot:default": {
@@ -67,6 +73,16 @@
   "session": {
     "dmScope": "per-channel-peer"
   },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
   "channels": {
     "telegram": {
       "enabled": true,
@@ -108,6 +124,6 @@
   },
   "meta": {
     "lastTouchedVersion": "2026.2.27",
-    "lastTouchedAt": "2026-02-27T17:12:19.152Z"
+    "lastTouchedAt": "2026-02-27T17:17:41.050Z"
   }
 }

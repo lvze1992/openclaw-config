@@ -1,14 +1,4 @@
 {
-  "meta": {
-    "lastTouchedVersion": "2026.2.27",
-    "lastTouchedAt": "2026-02-28T16:49:20.349Z"
-  },
-  "wizard": {
-    "lastRunAt": "2026-02-27T17:17:40.996Z",
-    "lastRunVersion": "2026.2.27",
-    "lastRunCommand": "onboard",
-    "lastRunMode": "local"
-  },
   "auth": {
     "profiles": {
       "moonshot:default": {
@@ -28,7 +18,10 @@
             "id": "kimi-k2.5",
             "name": "Kimi K2.5",
             "reasoning": false,
-            "input": ["text", "image"],
+            "input": [
+              "text",
+              "image"
+            ],
             "cost": {
               "input": 0,
               "output": 0,
@@ -74,25 +67,7 @@
   "session": {
     "dmScope": "per-channel-peer"
   },
-  "hooks": {
-    "internal": {
-      "enabled": true,
-      "entries": {
-        "session-memory": {
-          "enabled": true
-        }
-      }
-    }
-  },
   "channels": {
-    "dingtalk-connector": {
-      "enabled": true,
-      "clientId": "dingpul2ts6gnizcomqo",
-      "clientSecret": "LTArIV2fAl60EfzI3ITVzRIyW8_vIT0_lQ1C85tDGh6zdkT-oAaXze58g3Rwhh3x",
-      "gatewayToken": "7a3c0586a7107baa0256f00a04325395a04ce1fdfb2b2abc",
-      "gatewayPassword": "",
-      "sessionTimeout": 1800000
-    },
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
@@ -122,35 +97,17 @@
         "contacts.add",
         "reminders.add"
       ]
-    },
-    "http": {
-      "endpoints": {
-        "chatCompletions": {
-          "enabled": true
-        }
-      }
     }
   },
   "plugins": {
-    "load": {
-      "paths": ["/Users/lvze/work/openclaw-plugins/dingtalk-openclaw-connector"]
-    },
     "entries": {
       "telegram": {
         "enabled": true
-      },
-      "dingtalk-connector": {
-        "enabled": true
-      }
-    },
-    "installs": {
-      "dingtalk-connector": {
-        "source": "path",
-        "sourcePath": "/Users/lvze/work/openclaw-plugins/dingtalk-openclaw-connector",
-        "installPath": "/Users/lvze/work/openclaw-plugins/dingtalk-openclaw-connector",
-        "version": "0.6.0",
-        "installedAt": "2026-02-28T16:49:19.752Z"
       }
     }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.2.27",
+    "lastTouchedAt": "2026-02-27T17:12:19.152Z"
   }
 }

@@ -1,26 +1,16 @@
 # OpenClaw 配置文件
-# 位置: ~/.openclaw/config.yaml
-
 skills:
   load:
-    # 额外的 skill 目录
     extraDirs:
       - /Users/lvze/work/skills/skills
-
-    # 监视 skill 文件夹变化
     watch: true
     watchDebounceMs: 1000
 
-# Telegram 配置
 channels:
   telegram:
     enabled: true
-    # Bot Token 存储在 credentials/telegram-bot-token.json
-    # 文件接收设置
-    mediaMaxMb: 20        # 最大接收 20MB 文件
-    timeoutSeconds: 120   # 下载超时 120 秒
-    # 代理设置 - Clash HTTP 代理
-    proxy: http://127.0.0.1:7890
-    # 禁用 webhook，使用 polling 模式
+    mediaMaxMb: 20
+    timeoutSeconds: 120
+    # 不设置 proxy，使用系统 HTTP_PROXY/HTTPS_PROXY 环境变量
     webhook:
       enabled: false

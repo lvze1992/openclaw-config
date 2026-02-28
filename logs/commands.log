@@ -1,0 +1,3 @@
+{"timestamp":"2026-02-27T17:26:00.992Z","action":"new","sessionKey":"agent:main:main","senderId":"openclaw-control-ui","source":"webchat"}
+{"timestamp":"2026-02-27T18:11:30.557Z","action":"new","sessionKey":"agent:main:telegram:direct:7627657975","senderId":"7627657975","source":"telegram"}
+{"timestamp":"2026-02-27T18:46:58.014Z","action":"new","sessionKey":"agent:main:telegram:direct:7627657975","senderId":"7627657975","source":"telegram"}

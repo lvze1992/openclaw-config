@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "/Users/lvze/.openclaw/exec-approvals.sock",
+    "token": "nsZ8xzyygLAfvUfhYBgzE41QoBONUHVC"
+  },
+  "defaults": {},
+  "agents": {}
+}

@@ -113,11 +113,11 @@
       "sessionTimeout": 1800000,
       "dmPolicy": "allowlist",
       "allowFrom": [
-        "0948351305695176x"
+        "0948351305695176"
       ],
       "groupPolicy": "allowlist",
       "groupAllowFrom": [
-         "0948351305695176x"
+         "0948351305695176"
       ]
     },
     "telegram": {

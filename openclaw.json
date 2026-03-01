@@ -59,6 +59,22 @@
       "compaction": {
         "mode": "safeguard"
       },
+      "cliBackends": {
+        "cursor": {
+          "command": "agent",
+          "args": [
+            "-p"
+          ],
+          "output": "text",
+          "input": "arg",
+          "modelArg": "--model",
+          "modelAliases": {
+            "gpt-5": "gpt-5",
+            "sonnet-4": "claude-sonnet-4",
+            "sonnet": "claude-sonnet-4"
+          }
+        }
+      },
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8

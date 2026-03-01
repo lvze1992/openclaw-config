@@ -161,7 +161,8 @@
   "skills": {
     "load": {
       "extraDirs": [
-        "/Users/lvze/work/skills/skills"
+        "/Users/lvze/work/skills/skills",
+        "/Users/lvze/work/custom_skills"
       ],
       "watch": true,
       "watchDebounceMs": 1000

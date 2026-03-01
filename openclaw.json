@@ -28,7 +28,10 @@
             "id": "kimi-k2.5",
             "name": "Kimi K2.5",
             "reasoning": false,
-            "input": ["text", "image"],
+            "input": [
+              "text",
+              "image"
+            ],
             "cost": {
               "input": 0,
               "output": 0,
@@ -133,7 +136,9 @@
   },
   "plugins": {
     "load": {
-      "paths": ["/Users/lvze/work/openclaw-plugins/dingtalk-openclaw-connector"]
+      "paths": [
+        "/Users/lvze/work/openclaw-plugins/dingtalk-openclaw-connector"
+      ]
     },
     "entries": {
       "telegram": {
@@ -151,6 +156,15 @@
         "version": "0.6.0",
         "installedAt": "2026-02-28T16:49:19.752Z"
       }
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "/Users/lvze/work/skills/skills"
+      ],
+      "watch": true,
+      "watchDebounceMs": 1000
     }
   }
 }

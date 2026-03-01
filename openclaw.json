@@ -110,7 +110,15 @@
       "clientSecret": "LTArIV2fAl60EfzI3ITVzRIyW8_vIT0_lQ1C85tDGh6zdkT-oAaXze58g3Rwhh3x",
       "gatewayToken": "7a3c0586a7107baa0256f00a04325395a04ce1fdfb2b2abc",
       "gatewayPassword": "",
-      "sessionTimeout": 1800000
+      "sessionTimeout": 1800000,
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "0948351305695176x"
+      ],
+      "groupPolicy": "allowlist",
+      "groupAllowFrom": [
+         "0948351305695176x"
+      ]
     },
     "telegram": {
       "enabled": true,

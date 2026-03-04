@@ -8,7 +8,7 @@
       "name": "ETH实盘交易轮询-每10分钟",
       "enabled": true,
       "createdAtMs": 1772637572440,
-      "updatedAtMs": 1772638873760,
+      "updatedAtMs": 1772640230146,
       "schedule": {
         "kind": "every",
         "everyMs": 600000,
@@ -18,7 +18,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "执行ETH双周期MACD交易策略轮询（真实下单）。\n\n步骤：\n1. 进入目录：cd ~/work/custom_skills/xtrade/tradeExec/v85_ETH\n2. 执行轮询（真实下单）：python run_poll.py\n3. 读取结果并汇报：\n   - 当前仓位状态（是否持仓、方向、入场价、浮盈浮亏）\n   - 本次交易操作（开仓/平仓详情，成交价、数量）\n   - 信号分析（是否有信号未执行及原因、风控距离）\n4. 将汇报内容发送给用户\n\n注意事项：\n- 这是真实交易任务，务必谨慎\n- 如有错误（如时间戳问题、API限制），记录详细错误信息并说明建议\n- 当前配置为测试网（binance_testnet=true），如需切换实盘需修改 config.local.json"
+        "message": "执行ETH双周期MACD交易策略轮询（测试网真实交易）。\n\n步骤：\n1. 进入目录：cd ~/work/custom_skills/xtrade/tradeExec/v85_ETH\n2. 执行轮询（真实下单，正常仓位）：python run_poll.py\n3. 读取执行结果：\n   - 账户余额（权益）\n   - 当前持仓状态\n   - 本次交易操作（如有）\n4. 汇报给用户：\n   - **仓位情况**：是否持仓、方向、入场价、当前浮盈浮亏\n   - **交易详情**：如有开仓/平仓，报告：方向、数量、名义价值、订单号\n   - **策略信号**：是否有信号、信号类型、未执行原因\n\n仓位计算（策略默认）：\n- 仓位比例：20% 权益\n- 杠杆：5倍\n- 开仓数量 = (权益 × 20% × 5) / 当前价格\n\n示例：5000 USDT权益 → 保证金1000 USDT → 名义价值5000 USDT → 开仓约2.35 ETH\n\n注意事项：\n- 这是测试网真实下单，使用策略默认仓位参数\n- 如有错误，记录详细信息和修复建议\n- 当前配置为测试网（binance_testnet=true）"
       },
       "delivery": {
         "mode": "announce",
@@ -26,11 +26,11 @@
         "to": "0948351305695176"
       },
       "state": {
-        "nextRunAtMs": 1772639316023,
-        "lastRunAtMs": 1772638716023,
+        "nextRunAtMs": 1772640516033,
+        "lastRunAtMs": 1772639916033,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 3816,
+        "lastDurationMs": 46435,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

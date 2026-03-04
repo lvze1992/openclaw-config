@@ -189,7 +189,8 @@
     "load": {
       "extraDirs": [
         "/Users/lvze/work/skills/skills",
-        "/Users/lvze/work/custom_skills"
+        "/Users/lvze/work/custom_skills",
+        "/Users/lvze/work/custom_skills/xtrade/tradeExec/v85_ETH"
       ],
       "watch": true,
       "watchDebounceMs": 1000

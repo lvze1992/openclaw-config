@@ -1,4 +1,40 @@
 {
   "version": 1,
-  "jobs": []
+  "jobs": [
+    {
+      "id": "39f84366-1ecb-4fb7-bb14-a5f5e87d5674",
+      "agentId": "main",
+      "sessionKey": "agent:main:openai-user:dingtalk-connector:0948351305695176:1772637121954",
+      "name": "每分钟发送当前时间",
+      "enabled": true,
+      "createdAtMs": 1772637572440,
+      "updatedAtMs": 1772638301628,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 60000,
+        "anchorMs": 1772637572440
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "回复当前时间"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "dingtalk-connector",
+        "to": "0948351305695176"
+      },
+      "state": {
+        "nextRunAtMs": 1772638355699,
+        "lastRunAtMs": 1772638295699,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 5929,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
 }
